@@ -48,3 +48,4 @@ Verify deployed contract on Etherscan, paste deployent address in to replace `DE
 npm run verify DEPLOYED_CONTRACT_ADDRESS
 ```
 
+Charitable deployed on Rinkeby at 0xc6db69127ee7f7175ffb12e18ce0403922afc605 and verified on [Etherscan](https://rinkeby.etherscan.io/address/0xc6db69127ee7f7175ffb12e18ce0403922afc605#code)
