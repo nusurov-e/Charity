@@ -1,0 +1,33 @@
+{
+  "name": "charity",
+  "version": "1.0.0",
+  "description": "Crypton test task",
+  "main": ".eslintrc.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "build": "npx hardhat compile",
+    "test": "npx hardhat test",
+    "test:rinkeby": "npx hardhat test --network rinkeby",
+    "deploy": "npx hardhat run scripts/deploy.js",
+    "deploy_rinkeby": "npx hardhat run scripts/deploy.js --network rinkeby",
+    "deploy:task": "npx hardhat deploy",
+    "deploy_rinkeby:task": "npx hardhat deploy --network rinkeby",
+    "verify": "npx hardhat verify --contract contracts/Charitable.sol:Charitable  --network rinkeby"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "hardhat": "^2.8.1"
+  },
+  "dependencies": {
+    "@nomiclabs/hardhat-etherscan": "^3.0.0",
+    "@nomiclabs/hardhat-truffle5": "^2.0.3",
+    "@openzeppelin/test-helpers": "^0.5.15",
+    "bn-chai": "^1.0.1",
+    "dotenv": "^10.0.0",
+    "hardhat-gas-reporter": "^1.0.6"
+  }
+}
