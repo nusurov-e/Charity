@@ -9,8 +9,8 @@ let charitable, owner, user1, user2;
 contract('Charitable', async () => {
   before(async () => {
     [owner, user1, user2] = await web3.eth.getAccounts();
-    const deploy = require('../scripts/deploy');
-    charitable = await deploy.main();
+    const Charitable = artifacts.require("Charitable");
+    charitable = await Charitable.new()
   });
   async function donate(user, amount){
     const donation = await charitable.donationOf(user);
